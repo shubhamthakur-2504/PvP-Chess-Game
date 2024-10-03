@@ -56,7 +56,7 @@ class Main:
                         # valid piece (color)?
                         if piece.color == game.next_player:
 
-                            board.calc_Moves(piece,clicked_row,clicked_col)
+                            board.calc_Moves(piece,clicked_row,clicked_col,bool=True)
                             dragger.save_Initials(event.pos) # saves the initial position of piece
                             dragger.drag_Piece(piece)
                             #show methods
