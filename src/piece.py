@@ -28,6 +28,7 @@ class Piece:
 class Pawn(Piece):
     def __init__(self, color):
         self.dir = -1 if color =='white' else 1
+        self.en_passant=False
         # if color == 'white':
         #     self.dir = -1
         # else:                            above line is just shorter version of this if else statement

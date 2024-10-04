@@ -103,6 +103,8 @@ class Main:
                             captured = board.squares[release_row][release_col].has_pieces()
                             board.move(dragger.piece, move) 
 
+                            board.set_en_passant_True(dragger.piece)
+
                             #sound
                             game.sound_effect(captured)
 
